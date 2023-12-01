@@ -30,16 +30,17 @@ package Entidad;
 
 /* @author G96xyFast */
 public class Cadena {
+    /* El constructor con frase como atributo debe setear 
+    la longitud de la frase de manera automática. */
     private String frase;
-    private int longitud;
+    private int longitud = frase.length();
 
     public Cadena() {
     }
-    /* El constructor con frase como atributo debe setear 
-    la longitud de la frase de manera automática. */ 
+
     public Cadena(String frase, int longitud) {
         this.frase = frase;
-        this.longitud = frase.length();
+        this.longitud = longitud;
     }
 
     public String getFrase() {
@@ -57,5 +58,5 @@ public class Cadena {
     public void setLongitud(int longitud) {
         this.longitud = longitud;
     }
-    
+
 }
